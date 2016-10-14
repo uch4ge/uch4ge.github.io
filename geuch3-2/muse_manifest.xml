@@ -1,0 +1,28 @@
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.test.tw" resolutions="1x" timestamp="1446434140055">
+  <folder name="css">
+    <file name="site_global.css" crc="4052507572"/>
+    <file name="index.css" crc="513490108" ref="index"/>
+    <file name="master_a-__.css" crc="3937975511" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="196614522" ref="index"/>
+    <file name="museutils.js" crc="275725342" ref="index"/>
+    <file name="jquery.watch.js" crc="3999102769" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="24.jpg" crc="3933541406" ref="index"/>
+    <file name="m-u230.png" crc="3817474502" ref="index"/>
+    <file name="aa-u185.png" crc="507524714" ref="index"/>
+    <file name="003.png" crc="3783742814" seo="true" ref="index"/>
+    <file name="qqqw-u269.png" crc="4210596350" ref="index"/>
+    <file name="aa-u176.png" crc="507524714" ref="index"/>
+    <file name="001.png" crc="247705310" seo="true" ref="index"/>
+    <file name="u267-4.png" crc="4033265045" ref="index"/>
+    <file name="aa-u182.png" crc="507524714" ref="index"/>
+    <file name="002.png" crc="300428626" seo="true" ref="index"/>
+    <file name="u310-4.png" crc="4181463514" ref="index"/>
+    <file name="01.jpg" crc="3858219076" seo="true" ref="index"/>
+    <file name="u313-4.png" crc="493270043" ref="index"/>
+  </folder>
+  <file name="index.html" crc="515561406" seo="true" mt="1446434025145" redirect="true"/>
+</manifest>
