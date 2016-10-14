@@ -1,0 +1,22 @@
+<manifest alg="2" build="232" opt="false" iceEnabled="true">
+  <folder name="css">
+    <file name="site_global.css" crc="3837790900"/>
+    <file name="master_a-__.css" crc="4076528356" ref="index"/>
+    <file name="index.css" crc="3990639250" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="3992981318" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3956991090" ref="index"/>
+    <file name="jquery.watch.js" crc="4068933136" ref="index"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="bg.jpg" crc="3885853144" ref="index"/>
+    <file name="homeanm.swf" crc="4032495705" ref="index"/>
+    <file name="001-u232.png" crc="4255458268" ref="index"/>
+    <file name="002-u237.png" crc="433102015" ref="index"/>
+    <file name="003-u242.png" crc="21569042" ref="index"/>
+  </folder>
+  <file name="index.html" crc="3759549098" mt="1392552564367"/>
+</manifest>
