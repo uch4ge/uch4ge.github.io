@@ -1,0 +1,24 @@
+<manifest alg="2" build="30" opt="true" iceEnabled="true" exportTarget="other" resolutions="1x" timestamp="1407401102778">
+  <folder name="css">
+    <file name="site_global.css" crc="475048684"/>
+    <file name="master_a-__.css" crc="200435755" ref="index"/>
+    <file name="index.css" crc="506336066" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4245411419" ref="index"/>
+    <file name="museutils.js" crc="353204447" ref="index"/>
+    <file name="jquery.watch.js" crc="3923049248" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="green_cup.jpg" crc="518814749" ref="index"/>
+    <file name="xx02.png" crc="3814326489" ref="index"/>
+    <file name="indexfla.swf" crc="4235799635" ref="index"/>
+    <file name="xx01.png" crc="3823220229" ref="index"/>
+    <file name="nam.png" crc="482761953" ref="index"/>
+    <file name="nam03.png" crc="354502407" ref="index"/>
+    <file name="nam01.png" crc="381019914" ref="index"/>
+    <file name="nam02.png" crc="4127925925" ref="index"/>
+    <file name="nam04.png" crc="4194325355" ref="index"/>
+  </folder>
+  <file name="index.html" crc="250741302" mt="1407401102315" redirect="true"/>
+</manifest>

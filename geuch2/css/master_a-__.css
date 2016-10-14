@@ -1,0 +1,23 @@
+#u80
+{
+	background-color: #000000;
+	position: relative;
+}
+
+#u148,#u150,#u151,#u149
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	position: relative;
+}
+
+#u91,#u85,#u108,#u115,#u121,#u126,#u133
+{
+	position: relative;
+}
+
