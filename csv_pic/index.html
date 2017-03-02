@@ -10,10 +10,7 @@
 <!-- extra style css--> 
 <style type="text/css">
 #container { margin-left: auto; margin-right: auto; width: 400px;}
-img {
-    max-width: 50%;
-    height: auto;
-}
+
 </style>
 <title>貼圖作品</title>
 </head>
@@ -60,8 +57,8 @@ $.get('data.csv', function(data) {
 			html += ' <div class="modal-body">';
 			html += ' <p>貼圖:'+(i-1)+'.</p>';
 			//load 貼圖			
-			html += '<img src="'+columns[4]+'" alt="" >';
-			html += '<img src="'+columns[5]+'" alt="" >';
+			html += '<img src="'+columns[4]+'" alt="" style="width:50%;">';
+			html += '<img src="'+columns[5]+'" alt="" style="width:50%;">';
 			html += '</div>';
 			html += ' <div class="modal-footer">';
 			html += '   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>';
