@@ -1,0 +1,10 @@
+CSV File to HTML Table Using AJAX jQuery
+https://www.youtube.com/watch?v=rxZgPbzk4dU
+
+http://www.jqueryscript.net/table/jQuery-Plugin-To-Generate-A-Table-From-A-CSV-File-CSV-Parser.html
+
+
+https://uch4ge.github.io/csv_pic/index.html
+
+https://www.w3schools.com/js/js_ajax_applications.asp
+
