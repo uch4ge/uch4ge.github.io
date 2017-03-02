@@ -26,7 +26,7 @@ img {
 
 </body>
 <script>
-
+// load csv檔案名
 $.get('data.csv', function(data) {
 
 	// start the table	存到table
@@ -47,10 +47,10 @@ $.get('data.csv', function(data) {
 		   html += "<td>編號</td>";
 		}
 		else{
-		   html += "<td>" +(i-1);
-		   //modal
-            html += "<button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal"+(i-1)+"'>view </button>";		   
-		    html += '<div class="modal fade" id="myModal'+(i-1)+'" role="dialog">';
+		       html += "<td>" +(i-1);
+		       //modal
+                        html += "<button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal"+(i-1)+"'>view </button>";		   
+		        html += '<div class="modal fade" id="myModal'+(i-1)+'" role="dialog">';
 			html += '<div class="modal-dialog">';
 			html += '<div class="modal-content">';
 			html += ' <div class="modal-header">';
@@ -59,6 +59,7 @@ $.get('data.csv', function(data) {
 			html += '</div>';
 			html += ' <div class="modal-body">';
 			html += ' <p>貼圖:'+(i-1)+'.</p>';
+			//load 貼圖			
 			html += '<img src="'+columns[4]+'" alt="" >';
 			html += '<img src="'+columns[5]+'" alt="" >';
 			html += '</div>';
@@ -68,6 +69,7 @@ $.get('data.csv', function(data) {
 			html += '</div>';
 			html += '</div>';
 			html += '</div>';
+			//modal end
 			html += "</td>"
 		}
 		html += "<td>" + columns[0] + "</td>";
@@ -79,7 +81,7 @@ $.get('data.csv', function(data) {
 		 html += "<td>" + columns[5] + "</td>";
 		}
 		else{
-		 html += "<td><img src='" + columns[5] + "' width='160'></td>";
+		 html += "<td><img src='" + columns[5] + "' ></td>";
 	         }
 		// close row
 		html += "</tr>";
