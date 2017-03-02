@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--ajax plusin --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- extra style css--> 
+<style type="text/css">
+#container { margin-left: auto; margin-right: auto; width: 400px;}
+</style>
+<title>jQuery CSV Parser Plugin Demo</title>
+</head>
+<body>
+
+
+<h1 align="center" style="margin-top:150px; margin-bottom:30px;">jQuery CSV Parser Plugin Demo</h1>
+<!-- where the content will go ::csv資料填入html --> 
+<div id="container"></div>
+
+</body>
+<script>
+
+$.get('data.csv', function(data) {
+
+	// start the table	存到table
+	var html = '<table class="table table-bordered">';
+
+	// split into lines
+	var rows = data.split("\n");
+
+	// parse lines 一行一行讀
+	rows.forEach( function getvalues(ourrow) {
+
+		// start a table row
+		html += "<tr>";
+
+		// split line into columns 分欄
+		var columns = ourrow.split(",");
+		
+		html += "<td>" + columns[0] + "</td>";
+		html += "<td>" + columns[1] + "</td>";
+		html += "<td>" + columns[2] + "</td>";
+		html += "<td>" + columns[3] + "</td>";
+		html += "<td>" + columns[4] + "</td>";
+		html += "<td>" + columns[5] + "</td>";
+		
+		// close row
+		html += "</tr>";		
+	})
+	// close table
+	html += "</table>";
+
+	// insert into div 加入container
+	$('#container').append(html);
+	
+});
+</script>
+
+</html>
