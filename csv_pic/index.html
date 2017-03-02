@@ -45,8 +45,12 @@ $.get('data.csv', function(data) {
 		html += "<td>" + columns[2] + "</td>";
 		html += "<td>" + columns[3] + "</td>";
 		html += "<td>" + columns[4] + "</td>";
-		html += "<td><img src='" + columns[5] + "'></td>";
-		
+		if( (columns%nCol)==0){
+		 html += "<td>" + columns[5] + "</td>";
+		}
+		else{
+		 html += "<td><img src='" + columns[5] + "'></td>";
+	         }
 		// close row
 		html += "</tr>";		
 	})
