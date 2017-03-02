@@ -40,10 +40,10 @@ $.get('data.csv', function(data) {
 		// split line into columns 分欄
 		var columns = ourrow.split(",");
 		if(i==1){// first line
-		html += "<td>編號</td>";
+		   html += "<td>編號</td>";
 		}
-		html += "<td>" +i+ "</td>";
 		else{
+		   html += "<td>" +i+ "</td>";		
 		}
 		html += "<td>" + columns[0] + "</td>";
 		html += "<td>" + columns[1] + "</td>";
