@@ -10,13 +10,17 @@
 <!-- extra style css--> 
 <style type="text/css">
 #container { margin-left: auto; margin-right: auto; width: 400px;}
+img {
+    max-width: 50%;
+    height: auto;
+}
 </style>
-<title>jQuery CSV Parser Plugin Demo</title>
+<title>貼圖作品</title>
 </head>
 <body>
 
 
-<h1 align="center" style="margin-top:150px; margin-bottom:30px;">jQuery CSV Parser Plugin Demo</h1>
+<h1 align="center" style="margin-top:150px; margin-bottom:30px;">貼圖 Demo</h1>
 <!-- where the content will go ::csv資料填入html --> 
 <div id="container"></div>
 
@@ -43,7 +47,28 @@ $.get('data.csv', function(data) {
 		   html += "<td>編號</td>";
 		}
 		else{
-		   html += "<td>" +(i-1)+ "</td>";		
+		   html += "<td>" +(i-1);
+		   //modal
+            html += "<button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#myModal"+(i-1)+"'>view </button>";		   
+		    html += '<div class="modal fade" id="myModal'+(i-1)+'" role="dialog">';
+			html += '<div class="modal-dialog">';
+			html += '<div class="modal-content">';
+			html += ' <div class="modal-header">';
+			html += '<button type="button" class="close" data-dismiss="modal">&times;</button>';
+			html += '<h4 class="modal-title">Modal Header</h4>';
+			html += '</div>';
+			html += ' <div class="modal-body">';
+			html += ' <p>貼圖:'+(i-1)+'.</p>';
+			html += '<img src="'+columns[4]+'" alt="" >';
+			html += '<img src="'+columns[5]+'" alt="" >';
+			html += '</div>';
+			html += ' <div class="modal-footer">';
+			html += '   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>';
+			html += '</div>';
+			html += '</div>';
+			html += '</div>';
+			html += '</div>';
+			html += "</td>"
 		}
 		html += "<td>" + columns[0] + "</td>";
 		html += "<td>" + columns[1] + "</td>";
@@ -62,7 +87,8 @@ $.get('data.csv', function(data) {
 	})
 	// close table
 	html += "</table>";
-
+	
+   	
 	// insert into div 加入container
 	$('#container').append(html);
 	
