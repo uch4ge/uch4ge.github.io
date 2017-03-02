@@ -30,8 +30,8 @@ $.get('data.csv', function(data) {
 
 	// split into lines
 	var rows = data.split("\n");
-
-	// parse lines 一行一行讀
+        var i=1; //筆數	
+         // parse lines 一行一行讀
 	rows.forEach( function getvalues(ourrow) {
 
 		// start a table row
@@ -40,19 +40,21 @@ $.get('data.csv', function(data) {
 		// split line into columns 分欄
 		var columns = ourrow.split(",");
 		
+		html += "<td>" +i+ "</td>";
 		html += "<td>" + columns[0] + "</td>";
 		html += "<td>" + columns[1] + "</td>";
 		html += "<td>" + columns[2] + "</td>";
 		html += "<td>" + columns[3] + "</td>";
 		html += "<td>" + columns[4] + "</td>";
-		if( (columns%nCol)==0){
+		if(i==1){
 		 html += "<td>" + columns[5] + "</td>";
 		}
 		else{
 		 html += "<td><img src='" + columns[5] + "'></td>";
 	         }
 		// close row
-		html += "</tr>";		
+		html += "</tr>";
+		i++;
 	})
 	// close table
 	html += "</table>";
