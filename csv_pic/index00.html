@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- extra style --> 
+<style type="text/css">
+#container { margin-left: auto; margin-right: auto; width: 400px;}
+</style>
+<title>jQuery CSV Parser Plugin Demo</title>
+</head>
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/table/jQuery-Plugin-To-Generate-A-Table-From-A-CSV-File-CSV-Parser.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1 align="center" style="margin-top:150px; margin-bottom:30px;">jQuery CSV Parser Plugin Demo</h1>
+<!-- where the content will go --> 
+<div id="container"></div>
+
+</body>
+<script>
+
+$.get('data.csv', function(data) {
+
+	// start the table	
+	var html = '<table class="table table-bordered">';
+
+	// split into lines
+	var rows = data.split("\n");
+
+	// parse lines
+	rows.forEach( function getvalues(ourrow) {
+
+		// start a table row
+		html += "<tr>";
+
+		// split line into columns
+		var columns = ourrow.split(",");
+		
+		html += "<td>" + columns[0] + "</td>";
+		html += "<td>" + columns[1] + "</td>";
+		html += "<td>" + columns[2] + "</td>";
+		
+		// close row
+		html += "</tr>";		
+	})
+	// close table
+	html += "</table>";
+
+	// insert into div
+	$('#container').append(html);
+	
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
